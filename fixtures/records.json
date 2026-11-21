@@ -1,0 +1,32 @@
+{
+  "dataset": "agency",
+  "records": [
+    {
+      "id": "n-01",
+      "course": "earth-science",
+      "indicator": "student-question",
+      "source": "self-report",
+      "instrument": "v1",
+      "coverage": "complete",
+      "value": "asked-for-counterexample"
+    },
+    {
+      "id": "n-02",
+      "course": "earth-science",
+      "indicator": "task-choice",
+      "source": "teacher-observation",
+      "instrument": "v1",
+      "coverage": "partial",
+      "value": "chose-data-source"
+    },
+    {
+      "id": "n-03",
+      "course": "civics",
+      "indicator": "confidence",
+      "source": "survey",
+      "instrument": "v2",
+      "coverage": "nonresponse-high",
+      "value": "missing"
+    }
+  ]
+}
