@@ -9,12 +9,12 @@
     ],
     "instruments": [
       {
-        "id": "i-1",
+        "id": "i-1-v1",
         "version": "v1",
         "channel": "class-survey"
       },
       {
-        "id": "i-1",
+        "id": "i-1-v2",
         "version": "v2",
         "channel": "written-reflection"
       }
@@ -32,7 +32,7 @@
       "id": "n-1",
       "kind": "survey-response",
       "learner": "l-1",
-      "instrument": "i-1",
+      "instrument": "i-1-v1",
       "version": "v1",
       "response": "missing",
       "channel": "class-survey"
@@ -41,7 +41,7 @@
       "id": "n-2",
       "kind": "written-reflection",
       "learner": "l-1",
-      "instrument": "i-1",
+      "instrument": "i-1-v2",
       "version": "v2",
       "response": "asked-for-counterexample",
       "channel": "written-reflection"
