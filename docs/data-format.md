@@ -1,5 +1,5 @@
-# 记录格式
+# 合成课程资料格式
 
-学习者表达记录以 id、course、indicator、source、instrument、coverage、value 描述指标来源、工具版本、覆盖范围及观测值。
+constructs、instruments 与 opportunities 目录描述观察目标、量表版本和课程活动机会。records 分别保存调查、书面反思、教师观察、覆盖数量、渠道变更和后续观察计划。
 
-记录以 UTF-8 JSON 保存，顶层包含 dataset 和 records。每条记录的 id 在文件中唯一。`fixtures/records.json` 中的例子用于说明输入字段和状态取值。
+夹具只包含虚构的课程、任务和学习事件，不含真实学生资料，也不预先给出分析结论。项目当前入口仅检查夹具格式。

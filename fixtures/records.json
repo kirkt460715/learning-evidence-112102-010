@@ -1,32 +1,83 @@
 {
   "dataset": "agency",
+  "catalogs": {
+    "constructs": [
+      {
+        "id": "k-1",
+        "description": "questioning-and-next-step-planning"
+      }
+    ],
+    "instruments": [
+      {
+        "id": "i-1",
+        "version": "v1",
+        "channel": "class-survey"
+      },
+      {
+        "id": "i-1",
+        "version": "v2",
+        "channel": "written-reflection"
+      }
+    ],
+    "opportunities": [
+      {
+        "id": "act-1",
+        "course": "earth-science",
+        "choice": "select-data-source"
+      }
+    ]
+  },
   "records": [
     {
-      "id": "n-01",
-      "course": "earth-science",
-      "indicator": "student-question",
-      "source": "self-report",
-      "instrument": "v1",
-      "coverage": "complete",
-      "value": "asked-for-counterexample"
+      "id": "n-1",
+      "kind": "survey-response",
+      "learner": "l-1",
+      "instrument": "i-1",
+      "version": "v1",
+      "response": "missing",
+      "channel": "class-survey"
     },
     {
-      "id": "n-02",
-      "course": "earth-science",
-      "indicator": "task-choice",
-      "source": "teacher-observation",
-      "instrument": "v1",
-      "coverage": "partial",
-      "value": "chose-data-source"
+      "id": "n-2",
+      "kind": "written-reflection",
+      "learner": "l-1",
+      "instrument": "i-1",
+      "version": "v2",
+      "response": "asked-for-counterexample",
+      "channel": "written-reflection"
     },
     {
-      "id": "n-03",
-      "course": "civics",
-      "indicator": "confidence",
-      "source": "survey",
-      "instrument": "v2",
-      "coverage": "nonresponse-high",
-      "value": "missing"
+      "id": "n-3",
+      "kind": "observation",
+      "learner": "l-2",
+      "opportunity": "act-1",
+      "response": "selected-data-source",
+      "observer": "teacher"
+    },
+    {
+      "id": "n-4",
+      "kind": "opportunity-coverage",
+      "course": "earth-science",
+      "activity": "act-1",
+      "eligible": 24,
+      "observed": 15,
+      "period": "wk-4"
+    },
+    {
+      "id": "n-5",
+      "kind": "channel-change",
+      "instrument": "i-1",
+      "old_version": "v1",
+      "new_version": "v2",
+      "reason": "alternative-response-channel"
+    },
+    {
+      "id": "n-6",
+      "kind": "observation-plan",
+      "course": "earth-science",
+      "activity": "act-1",
+      "channel": "written-reflection",
+      "status": "proposed"
     }
   ]
 }
