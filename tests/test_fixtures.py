@@ -15,5 +15,13 @@ class FixtureTests(unittest.TestCase):
         self.assertEqual(len(identifiers), len(set(identifiers)))
         self.assertTrue(all(isinstance(row, dict) for row in data['records']))
 
+    def test_observation_channels_and_coverage_changes_are_retained(self):
+        data = json.loads((ROOT / 'fixtures' / 'records.json').read_text(encoding='utf-8'))
+        self.assertEqual({row['version'] for row in data['catalogs']['instruments']}, {'v1', 'v2'})
+        kinds = {row['kind'] for row in data['records']}
+        self.assertTrue({'survey-response', 'written-reflection', 'observation', 'opportunity-coverage', 'channel-change', 'observation-plan'} <= kinds)
+        coverage = next(row for row in data['records'] if row['kind'] == 'opportunity-coverage')
+        self.assertGreater(coverage['eligible'], coverage['observed'])
+
 if __name__ == '__main__':
     unittest.main()
